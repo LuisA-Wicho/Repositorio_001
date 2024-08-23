@@ -1,4 +1,4 @@
-print("Hola culo ;)")
+print("Hola ;)")
 nombre = input("Ingresa tu nombre: ")
 edad = int(input("Ingresa tu edad: "))
 
