@@ -1,14 +1,12 @@
-print("\n\n\t\tS E R I E    F I B O N A C C I\n")
+print("\n\n\t\tI N V E R T I R      C A D E N A         D E         T E X T O\n")
 
-def fibonacci(n):
-    if n == 1:
-        return 0
-    elif n == 2:
-        return 1
+def invertir(ca):
+    if len(ca) <= 1:
+        return ca
     else:
-        return fibonacci(n-1) + fibonacci(n-2)
+        return ca[-1] + invertir(ca[:-1])
     
 
-numero = int(input("Ingrese la posicion de la lista a buscar: "))
+cadena = input("Ingrese el texto a invertir: ")
 
-print(fibonacci(numero))
+print(invertir(cadena))

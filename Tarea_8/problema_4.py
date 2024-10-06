@@ -1,12 +1,12 @@
-print("\n\n\t\tI N V E R T I R      C A D E N A         D E         T E X T O\n")
+print("\n\n\t\tP O T E N C I A\n")
 
-def invertir(ca):
-    if len(ca) <= 1:
-        return ca
+def potencia(x,y):
+    if y == 0:
+        return 1
     else:
-        return ca[-1] + invertir(ca[:-1])
-    
+        return x * potencia(x,y-1)
 
-cadena = input("Ingrese el texto a invertir: ")
+a = int(input("Ingrese el numero base: "))
+b = int(input("Ingrese el numero potencia: "))
 
-print(invertir(cadena))
+print(potencia(a,b))
